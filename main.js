@@ -1,4 +1,5 @@
 const {app, BrowserWindow} = require('electron')
+require('@electron/remote/main').initialize()
 let win
 
 const createWindow = () => {
@@ -7,12 +8,12 @@ const createWindow = () => {
 		useContentSize: true,
 		width: 800,
 		height: 600,
-		resizable: false,
-		fullscreen: false,
+		resizable: true,
 		show: false,
 		webPreferences: {
 			nodeIntegration: true,
-			contextIsolation: false
+			contextIsolation: false,
+			enableRemoteModule: true
 		}
 	})
 	win.loadFile('index.html')

@@ -4,8 +4,8 @@ body {
 	background: black;
 	color: white;
 	font-family: 'Helvetica', 'Arial', 'Sans';
-	width: 800px;
-	height: 600px;
+	width: 100vw;
+	height: 100vh;
 }
 
 #saveFile, canvas {
@@ -15,8 +15,8 @@ body {
 video {
 	z-index: 1;
 	position: absolute;
-	width: 800px;
-	height: 600px;
+	width: 100vw;
+	height: 100vh;
 }
 
 #takePhoto {
